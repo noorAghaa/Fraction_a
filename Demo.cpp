@@ -13,25 +13,62 @@ using namespace std;
 
 #include "sources/Fraction.hpp"
 
-using namespace ariel;
+using namespace std;
 
 
 int main() {
     Fraction a(5,3), b(14,21);
+    float flt = 2.421;
+
     cout << "a: " << a << "b: " << b << endl;
-    cout << "a+b" << a+b << endl; 
-    cout << "a-b" << a-b << endl; 
-    cout << "a/b" << a/b << endl; 
-    cout << "a*b" << a*b << endl; 
-    cout << "2.3*b" << 2.3*b << endl; 
-    cout << "a+2.421" << a+2.421 << endl; 
+  
+    cout << "a+b: " << a+b << endl;
+    cout << "flt + a: " << flt + a << endl;
+    cout << "a + flt: " << a + flt << endl << endl; 
+
+
+    cout << "a-b: " << a-b << endl; 
+    cout << "flt - a: " << flt - a << endl;
+    cout << " a - flt: " << a - flt << endl<< endl;
+
+    cout << "a/b: " << a/b << endl; 
+    cout << "flt / a: " << flt / a << endl;
+    cout << " a / flt: " << a / flt << endl<< endl;
+
+    cout << "a*b: " << a*b << endl; 
+    cout << "flt * a: " << flt * a << endl;
+    cout << " a * flt: " << a * flt << endl<< endl;
+    
+    cout << "flt * b * flt: " << flt * b * flt << endl<< endl; 
+    
     Fraction c = a+b-1;
-    cout << c++ << endl;
-    cout << --c << endl;
+    cout << "c: " << c << endl;
+    
+    cout << "--c: " << --c << endl;
+    cout <<"c: "<< c << endl;
+    cout <<" c--: " << c-- << endl;
+    cout <<"c: " << c << endl<< endl;
 
-    cout << "c >=b ? : " << (c >= b) << endl;
-    if (a > 1.1) cout << " a is bigger than 1.1" << endl;
-    else cout << " a is smaller than 1.1" << endl;
+    cout << "++c: " << ++c << endl;
+    cout <<"c: "<< c << endl;
+    cout <<" c++: " << c++ << endl;
+    cout <<"c: " << c << endl<< endl;
 
+    cout <<"a > b: "<< (a > b) << endl;
+    cout <<"flt > b: " << (flt > b) << endl;
+    cout <<"b > flt: " << (b > flt) << endl<< endl;
+
+    cout <<"a < b: "<< (a < b) << endl;
+    cout <<"flt < b: " << (flt < b) << endl;
+    cout <<"b < flt: " <<( b < flt) << endl<< endl;
+
+    cout <<"a >= b: "<< (a >= b) << endl;
+    cout <<"flt >= b: " << (flt >= b) << endl;
+    cout <<"b >= flt: " << (b >= flt) << endl << endl;
+
+    cout <<"a >= b: "<< (a >= b) << endl;
+    cout <<"flt >= b: " << (flt >= b) << endl;
+    cout <<"b >= flt: " << (b >= flt )<< endl;
+    
 
 }
